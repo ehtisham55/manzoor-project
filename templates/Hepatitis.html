@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <style>
+        body {
+            background: linear-gradient(#53f7d4, #000ecc);
+            background-size: 200px 1100px;
+            margin:0;
+            padding:0;
+        }
+
+        div.first {
+            position:relative;
+            left:290px;
+            width:25%;
+        }
+        div.second {
+            position:relative;
+            right:290px;
+            width:30%;
+        }
+        div.btn {
+            position:relative;
+            top:400px;
+
+        }
+        div.lower {
+            background: black;
+            position:relative;
+            top:430px;
+            width:100%;
+            height:310px;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+    <body>
+
+        <center>
+
+        <h1> HEPATITIS DETECTION </h1><br>
+        
+        <form method="POST" action="http://127.0.0.1:5000/predict_hepatitis">
+           <b><div class="first" style="float:left;">
+            Enter Class :  <input type="text" name='a1' placeholder="Class (1 or 2)"> <br><br>
+            Enter Age :  <input type="text" name='a2' placeholder="Age (1 to 80)"> <br><br>
+            Enter Sex :  <input type="text" name='a3' placeholder="Sex (1 or 2)"> <br><br>
+            Enter Steroid : <input type="text" name='a4' placeholder="Steroid (1 or 2)"> <br><br>
+            Enter Antivirals : <input type="text" name='a5' placeholder="Antivirals (1 or 2)"> <br><br>
+            Enter Fatigue : <input type="text" name='a6' placeholder="Fatigue (1 or 2)"> <br><br>
+            Enter Malaise : <input type="text" name='a7' placeholder="Malaise (1 or 2)"> <br><br>
+            Enter Anorexia : <input type="text" name='a8' placeholder="Anorexia (1 or 2)"> <br><br>
+            Enter Liver_Big : <input type="text" name='a9' placeholder="Liver_Big (1 or 2)"> </div>
+            <div class = "second" style="float:right;">
+            Enter Liver_Firm : <input type="text" name='b1' placeholder="Liver_Firm (1 or 2)"> <br><br>
+            Enter Spleen_Palable : <input type="text" name='b2' placeholder="Spleen_Palable (1 or 2)"> <br><br>
+            Enter Spiders : <input type="text" name='b3' placeholder="Spiders (1 or 2)"> <br><br>
+            Enter Ascites : <input type="text" name='b4' placeholder="Ascites (1 or 2)"> <br><br>
+            Enter Varices : <input type="text" name='b5' placeholder="Varices (1 or 2)"> <br><br>
+            Enter Bilirubin : <input type="text" name='b6' placeholder="Bilirubin (0.0 to 8.0)"> <br><br>
+            Enter Alk_Phosphate : <input type="text" name='b7' placeholder="Alk_Phosphate (25 to 300)"> <br><br>
+            Enter Sgot : <input type="text" name='b8' placeholder="Sgot (14 to 650)"> <br><br>
+            Enter Albumin : <input type="text" name='b9' placeholder="Albumin (2.0 to 7.0)"> <br><br>
+            Enter Protime : <input type="text" name='b10' placeholder="Protime (0 to 100)"> </div> </b>
+
+            <div class="btn"><input style="background:linear-gradient(#53f7d4, #000ecc);font-size:30px;width:250px;" type="submit" value='PREDICT!' ></div>
+        </form>
+        <div class="lower">
+
+
+        </div>
+    </center>
+
+    </body>
+</html>
